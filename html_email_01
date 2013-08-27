@@ -1,0 +1,204 @@
+ 
+<html>
+<head>
+<title>Barclays | Family Office Forum </title>
+</head>
+ 
+<body style="	background-color: #EBEBEC; margin:0" topmargin="0" leftmargin="0">
+ 
+<!-- KEEP STYLES INSIDE THE BODY TAG... NOT IN THE head TAG  -->
+<style> 
+ 
+table{
+	background-color:#FFFFFF;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-size: 13px;
+	color: #58595B;	
+	line-height: 17px;
+}
+
+/*
+ FOR REFERENCE ONLY DO NOT RELY ON CLASSES IN OFT FILES
+lead_text			  font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 15px;	line-height:17px;
+page_title			font-size:20px; color:#00AEEF;margin: 0 0 24px 0
+body_text 			font-size:13px; 
+disclaimer 			font-size:9px;line-height:14px;
+smalltext 			font-size:9px;line-height:14px;
+
+Primary colors
+cyan 						color: #00AEEF;
+white						color: #FFFFFF;
+				
+Secondary colors
+cyan10					color: #E1F4FD;
+black 					 color: #000000;
+darkgrey 				 color: #59585B;
+Pantone					 color: #00395D;
+darkgrey10			 color: #EBEBEC;
+
+
+Tertiary colors
+burgundy 			 color: #9D063B;
+limegreen 		 color: #519136;
+orange 				 color: #E5801D;
+taupe 				 color: #AB9C8F;
+yellow 				 color: #FEBE10;
+
+
+ 
+*/
+
+a, a:link {	text-decoration: underline;	color: #58595b; }
+a:visited {	text-decoration: underline;	color: #58595b; }/*ignored in Outlook 2007*/
+a:hover {	text-decoration: underline;	color: #00aeef; }/*ignored in Outlook 2007*/
+ 
+</style>
+ 
+
+
+<!-- body table --> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+  <tr>
+    <td style="	background-color: #EBEBEC; font-size: 9px; color:#58595B;" height="36" align="center">To view in browser, 
+				<a href="http://www.barclayscommunications.com/us/430283/index.php" style="font-weight:bold" target="_blank">click here</a>.
+		</td>
+  </tr>
+	<tr>
+    	<td style="background-color: #EBEBEC;">
+        <!-- container table --> 
+        <table border="0" cellpadding="0" cellspacing="0" width="740" align="center">
+
+        <tr><td height="36" width="740" colspan="3"><img style="display:block;" src="http://www.barclayscommunications.com/us/430283/images/spacer.gif" width="740" height="36" border="0"></td></tr>
+
+       <!-- content row -->
+    		<tr>
+          	<td width="24"><img style="display:block;" src="http://www.barclayscommunications.com/us/430283/images/spacer.gif" width="24" height="1" border="0"></td>
+            	<td width="692">
+							<!-- content cell -->
+
+							<!-- Header  -->
+    						<table cellpadding="0" cellspacing="0" width="692">
+                    <tr>
+                          <td align="left" valign="top" style="vertical-align:top;"><img src="http://www.barclayscommunications.com/us/430283/images/logo.jpg" alt="Barclays" width="188" height="32" style=""/></td>
+                        	<td align="right" style="padding-bottom:5px">&nbsp; <!--
+															<div style="color:#00AEEF; font-size:15px;line-height:15px;">Division/Business</div>
+															<div style="color:#58595B; font-size:13px;line-height:15px;">Sub offering/product</div> -->
+											</td>
+                    </tr>
+                </table>
+              <!-- end of Header  -->
+
+
+							
+              <!-- NO navigation -->
+							    <!-- spacer row  - go figure why, 28px is what makes the OFT match the web version --
+                   <img style="display:block;" src="http://www.barclayscommunications.com/us/430283/images/spacer.gif" width="692" height="28" border="0"> 
+              <!-- end of NO navigation -->
+							
+          <!-- WITH navigation -->
+			    <!-- spacer row  - height is 24px from logo baseline = 24px - 3px (eagle's tail) = 21px  -->
+
+
+				<table cellpadding="0" cellspacing="0">
+                  <tr>
+                  	<td  height="21" colspan="2"><img style="display:block;" src="http://www.barclayscommunications.com/us/430283/images/spacer.gif" width="692" height="21" border="0"></td>
+                    </tr>
+                  <tr>	
+                  		<td width="472"><img style="display:block;" src="http://www.barclayscommunications.com/us/430283/images/spacer.gif" width="450" height="21" border="0"></td>
+<td width="220" align="right">
+      						<a href="http://www.barclayscommunications.com/us/430283/invitation.html" target="_blank" style="text-decoration:none;  color:#00AEEF; font-weight:normal; font-size:15px;">Invitation</a>
+      						<img src="images/spacer.gif" width="1"  border="0">&#124;<img src="images/spacer.gif" width="1"  border="0">
+      						<a href="https://www.barclayscommunications.com/us/430283/registration.php"  target="_blank" style="text-decoration:none; font-weight:normal; font-size:15px;">Registration</a>      						</td>
+                  </tr>
+                  <tr><td height="9" colspan="2"><img style="display:block;" src="http://www.barclayscommunications.com/us/430283/images/spacer.gif" width="692" height="9" border="0"></td></tr>
+              </table>
+
+
+				    <!-- spacer row  - 12px - 3px (mystery adjustment) = 9px  -->
+              <!-- end of WITH navigation -->
+				
+    					
+                  <img style="display:block;" src="http://www.barclayscommunications.com/us/430283/images/main_banner.jpg" width="692" height="311" border="0"><br>
+                  <div width="692" style="color:#00AEEF;font-size:20px;margin:0 0 24px;">Barclays cordially invites you to attend our </div>
+                  <img style="display:block;" src="http://www.barclayscommunications.com/us/430283/images/main_title.jpg" width="692" height="64" border="0">
+
+
+<!-- content below - content below - content below -  -->									
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 15px;	line-height:17px; ">In partnership with Ken Wittenberg and Lee Norwood </div>
+
+<br>
+
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 15px;	line-height:17px;"><b>Honored Speaker Jeb Bush</b><br>
+Senior Advisor to Barclays and Former Governor of Florida</div>
+
+<br>
+
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 15px;	line-height:17px;">Hedge Fund Manager Panel on "Is Deflation Still a Risk?"</div>													
+
+<br>
+
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 15px;	line-height:17px; color: #00AEEF;"><b>Tuesday, September 11, 2012</b></div>
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 15px;	line-height:17px; ">11:30am&ndash;2:00pm</div>
+
+<br>
+
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 15px;	line-height:17px; "><b>Detroit Athletic Club</b><br>
+241 Madison Avenue<br>
+Detroit, MI 48226
+</div>
+
+<br>
+
+I agree to the attached <a href="http://www.barclayscommunications.com/us/430283/pdf/terms.pdf" target="_blank">terms and conditions</a>.
+
+<br>
+<br>
+
+Please reach out to Claire Min at <a href="mailto:claire.min%40barclays.com?subject=Barclays%20%7C%20Family%20Office%20Forum&body=">claire.min@barclays.com</a> or Kate Holleran at <a href="mailto:kate.holleran%40barclays.com?subject=Barclays%20%7C%20Family%20Office%20Forum&body=">kate.holleran@barclays.com</a> with any questions.
+
+<br>
+<br>
+
+<a href="http://www.barclayscommunications.com/us/430283/ical.ics" class="add_to_outlook" style="font-weight:bold;">Add to Outlook</a>
+
+	
+<!-- content above - content above - content above -  -->									
+									
+									
+							
+							<!-- end of content cell -->
+						  </td>                                
+              <td width="24"><img style="display:block;" src="http://www.barclayscommunications.com/us/430283/images/spacer.gif" width="24" height="1" border="0"></td>
+          </tr>
+
+          <tr><td height="24" width="740" colspan="3"><img style="display:block;" src="http://www.barclayscommunications.com/us/430283/images/spacer.gif" width="740" height="24" border="0"></td></tr>
+		  <tr>
+		  	<td colspan="3" style="background-color: #EBEBEC; font-size: 9px; color:#58595B;">
+            <br>
+            
+            
+            &copy;&nbsp;Barclays&nbsp;Bank&nbsp;PLC&nbsp;2012
+                    
+            <p style="	background-color: #EBEBEC; font-size: 9px; color:#58595B;">CSNY 430283</p>
+
+		  	</td>
+          </tr>
+        </table>
+        <!-- end of container table --> 
+			</td>
+	</tr>
+
+</table>
+<!-- end of body table --> 
+
+
+
+
+
+</body>
+</html>
+ 
+ 
+
