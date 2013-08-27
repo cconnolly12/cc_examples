@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Face Off Unlimited</title>
+	<script type="text/javascript" src="./js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/fancybox/jquery.fancybox-1.2.1.pack.js"></script> 
+	<script type="text/javascript" src="./js/custom.js"></script> 
+	<script type="text/javascript" src="./js/jquery.pngfix.pack.js"></script>
+	
+	<link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./dark_grunge.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+			
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="iefix.css" type="text/css" media="screen" />
+	<![endif]-->
+<meta charset="UTF-8">
+
+<style type="text/css">
+
+#slidebox{
+	width:700px;
+	height:440px;
+	position:absolute;
+	left:55%;
+	top:230px;
+	margin-left:-390px;
+	margin-top:-210px;
+	background-image: url(data/contacts.png);
+}
+
+</style>
+
+
+</head>
+
+<body>
+	<div id="bg-wrapper">
+
+			<div class="quotes">
+			<div id="quotetext">
+<script type="text/javascript" >
+var myquotes = new Array(
+	'<i>"Really Funny!"</i> <br/>The New York Times',
+	'<i>"Nothing short of brilliant!"</i> <br/>Nightlife Exchange',
+	'<i>"An East Village Sensation!"</i> <br/>Asian Fusion Magazine',
+	"<i>'The raddest podcast ever!'</i> <br/>Tyler Posey, MTV's Teen Wolf",
+	"<i>'The best improv show you'll ever see!'</i> <br/>Adelphi University",
+	'<i>One of the "Best things to do in NYC"</i> <br/>CBS NY',
+	"<i>'They're not messing around'</i> <br/>The Village Voice",
+	'<i>"The Granddaddy of LI Improv!"</i> <br/>Newsday',
+	'<i>"A Late Night Hit!" <br/>The New York Times!'
+	// Leave the last quote without a comma at the end
+	);
+
+function rotatequote()
+{
+	thequote = myquotes.shift(); //Pull the top one
+	myquotes.push(thequote); //And add it back to the end
+	
+	document.getElementById('quotetext').innerHTML = thequote;
+	// This rotates the quote every 10 seconds.
+	// Replace 10000 with (the number of seconds you want) * 1000
+	t=setTimeout("rotatequote()",5000);
+}
+
+// Start the first rotation.
+rotatequote();
+</script>
+			</div>
+				</div>
+				
+		<div id="logo">
+        <img src="images/followus/socialhead.png" alt="social" usemap="#Map" style="float: right; vertical-align: middle; padding: 30px 30px 10px 10px;" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="1,0,48,47" href="http://www.facebook.com/faceoffimprov" target="_blank" alt="Facebook" />
+          <area shape="rect" coords="50,1,96,47" href="http://www.twitter.com/faceoffimprov" target="_blank" alt="Twitter" />
+		  <area shape="rect" coords="100,1,148,47" href="http://www.youtube.com/faceoffunlimited" target="_blank" alt="YouTube" />
+        </map>
+			<a href="./index.html">Face Off Unlimited</a>
+		</div>
+    	<div id="shadow-top"></div>
+		<div id="wrapper">
+			<div id="inner">
+				<div id="header">
+					<div class="top">
+						<ul id="navigation">
+							<li><a href="./index.html">Home</a></li>
+                            <li class="current"><a href="./shows.html">Shows</a></li>
+                            <li><a href="./classes.html">Classes</a></li>
+							<li><a href="./booking.html">Bookings</a></li>
+							<li><a href="./cbooking.html">Corporate Workshops</a></li>							
+                      <!--  <li><a href="./merchandise.html">Merchandise</a></li>  -->
+                            <li><a href="./contact.html">Contact</a></li>
+                            
+                            <!--
+							<li><a href="./services.html">services</a>
+								<ul>
+									<li><a href="#">great webdesign</a></li>
+									<li><a href="#">super printdesign</a></li>
+									<li><a href="#">prof. marketing</a></li>
+								</ul>
+							</li>
+							<li><a href="./blog.html">blog</a></li>
+							<li><a href="./contact.html">contact</a></li>
+						 
+                        
+                        -->
+                        </ul>
+					</div>
+				<div id="content-wrapper">
+					
+					<!-- Important message 
+					
+                    					<font color="red" size="+1">The Monday 11/4 performance of BATSU! will go on as scheduled! Come to East Village and laugh your Face Off!</font>
+					<br/><br/>
+        
+					-->
+        
+		<!--
+                            <p>The story of Face Off begins in 2002. Two company actors at a small regional theatre in Port Jefferson, NY, created a short-form improvisational comedy show in the theater's unused second stage called "Friday Night Face Off". Little did they know that ten years later 'FNFO' would become the longest running, weekly improv show in Long Island history. In July of 2009, Eric and Jay formed Face Off Unlimited, LLC (a limited liability company). Jay was named Artistic Director and Eric CFO, and shortly thereafter they brought on the services of experienced improviser and former "FNFO" Creative Director Joe Teixeira as Director of Operations. Since then, the Face Off Universe has grown to include the following productions:</p>
+                  -->
+
+<!-- BATSU SHOW START -->
+                  <div id="post-1" class="blog-post">
+							  <div class="title">
+								<h2><a href="./article.html">Face Off Unlimited Presents BATSU!</a></h2>
+								</div>
+								<a class="post-image" href="batsu.html">
+									<img height="200" width="200" alt="Thumb1" src="./images/shows_batsu.png" />
+								</a>
+								<div class="post-detail">
+								  <div class="post-info">
+										<ul>
+											<li class="date">Mondays and Thursdays at 8 PM</li>
+											
+											<li class="tags"><a href="http://maps.google.com/maps?q=Je+Bon+Noodle+House&hl=it&hq=Je+Bon+Noodle+House&radius=15000&t=h&z=17&iwloc=A" title="Je'Bon Noodle House" target="_blank">Je'Bon Noodle House</a></li>
+										</ul>
+								  </div>
+									<p class="excerpt">
+								  In Japan, batsu means "punishment" and the batsu-game is a form of comedy competition where the losers are forced to endure hilarious and outrageous penalties. Face Off Unlimited has blended this wildly popular piece of Japanese culture with their own hysterical style of improv comedy to create BATSU!
+<br/><br/>
+BATSU! takes place in a cool underground lounge theatre in NYC's "Little Tokyo.”  A full menu/bar is available and audience members enjoy sushi, noodles, and sake, while the bravest may even sign up for a chance to participate in the show to win free beer and prizes! Visit <a href="http://www.jebonusa.com" target="_blank">jebonusa.com</a> to view menu. 
+									<div style="width:500px ; float:left"> <a href="batsu.html"><img src="images/more_button.png" width="89" height="33" alt="Read More" /></a></div>												
+                        </div>
+								</div>
+<!-- BATSU SHOW END -->
+
+<!-- IN THE ROOM SHOW START -->
+                                <div id="post-2" class="blog-post">
+								<div class="title">
+									<h2><a href="http://intheroomwithus.com/" target="_blank">In The Room (with Joe Jay Eric and Lyle)</a></h2>
+									
+								</div>
+								<a href="http://www.intheroomwithus.com/" target="_blank" class="post-image">
+									<img height="200" width="200" alt="Thumb1" src="images/shows_intheroom2.png" />
+								</a>
+							  <div class="post-detail">
+								  <div class="post-info">
+										<ul>
+											<li class="date">Every Saturday and Sunday</li>
+											<li class="tags"><a href="http://itunes.apple.com/us/podcast/in-room-joe-jay-eric-lyle/id540297549" title="iTunes" target="_blank">iTunes</a></li>
+										</ul>
+								</div>
+									<p class="excerpt">Join Face Off's Joe Tex, Jay Painter, and Eric Robinson as they discuss their opinions and observations of the world around them with radio personality and comedy writer Lyle Pinder. In the Room features original comedy content and often times features special guests stopping by to hang with the guys. 
+<br/><br/>
+Recent Roommates include: Jim Rash (Community), Joel Murray (Monsters University/God Bless America), Dan Bakkedahl (Legit/Veep), Josh Gad (1600 Penn, Book of Mormon, Jobs), Samm Levine (Do No Harm, Freaks & Geeks), Tyler Posey (Teen Wolf, Taco Shop),  Who will be in the ROOM next? Tune in every Saturday and Sunday to find out! 
+<br/><br/>
+Stream right from our website, or subscribe & download on iTunes & Stitcher.   Rate and subscribe the podcast rocketing up the iTunes "What's Hot" charts!
+									
+									<!-- Old as of 2013-02-14
+									Join Face Off's Joe Tex, Jay Painter, and Eric Robinson as they discuss their opinions and observations of the world around them with radio personality and comedy writer Lyle Pinder. In the Room features original comedy content and often times features special guests stopping by to hang with the guys. Past guests include: MTV's Teen Wolf Tyler Posey, actor/director Joel Murray, Epic Rap Battles of History creator and star, EpicLLOYD, and singer/songwriter and American Idol Sweetheart, Devyn Rush! Who will be in the Room next, live and uncensored? Tune in every Saturday and Sunday to find out! Listen, rate, and subscribe the podcast that iTunes named to the coveted "What's Hot" list!  A radio version of In The Room broadcasts as a weekend show on select radio stations around the country.
+									--></p>
+<div style="width:500px ; float:left"> <a href="http://www.intheroomwithus.com/" target="_blank"><img src="images/more_button.png" width="89" height="33" alt="Read More" /></a><a href="http://itunes.apple.com/us/podcast/in-room-joe-jay-eric-lyle/id540297549" target="_blank"><img src="images/download_button.png" width="89" height="33" alt="download" /></a></div>												
+                        </div>								</div>
+                                
+<!-- IN THE ROOM SHOW END -->
+
+<!-- IMPROVIUS MAXIMUS SHOW START -->
+                        <div id="post-3" class="blog-post">
+								<div class="title">
+									<h2><a href="/maximus.html" target="_blank">Face Off Unlimited Presents Improvius Maximus</a></h2>
+                                    
+								</div>
+								<a class="post-image" href="maximus.html">
+									<img height="200" width="200" alt="Thumb1" src="./images/shows_maximus.png" />
+								</a>
+							  <div class="post-detail">
+								  <div class="post-info">
+										<ul>
+											<li class="date">NEXT MAXIMUS TOURNY STARTS SOON</li>
+											<li class="tags"><a href="http://maps.google.it/maps?q=the+secret+theatre&hl=it&hq=the+secret+theatre&t=h&z=15" target="_blank">The Secret Theatre</a></li>
+                                        </ul>
+								</div>
+									<p class="excerpt">
+										Improvius Maximus challenges long-form improv teams from UCB, The PIT, The Magnet Theatre, and the best indie teams in NYC, to compete in Mighty Caesar's arena for laughs and for glory! Emperor Nero challenges the teams to complete hilarious tasks, or to improvise with outrageous restrictions imposed upon them. Citizens of Rome may sign up for a chance to compete before Caesar as part of a mixer team.  With Slave girl fetching beers and trusted hunky guard Foretourrus by Mighty Caesar's side, the future of comedy is Ancient Rome!
+										<br/><br/>
+										Free for improvisers from ANY comedy gladiator training ground / $5 citizens of Rome
+									</p>
+<div style="width:500px ; float:left"> <a href="maximus.html"><img src="images/more_button.png" width="89" height="33" alt="Read More" /></a></div>												
+                        </div>								</div>
+<!-- IMPROVIUS MAXIMUS SHOW END -->    
+
+<!-- A WHOLE NOTHER LEVEL SHOW START 
+                        <div id="post-3" class="blog-post">
+								<div class="title">
+									<h2><a href="http://www.faceoffunlimited.com/booking.html">Face Off Unlimited Presents - A Whole 'Nother Level</a></h2>
+                                    
+								</div>
+								<a class="post-image" href="booking.html">
+									<img height="200" width="200" alt="Thumb1" src="./images/shows_maximus.png" />
+								</a>
+							  <div class="post-detail">
+								  <div class="post-info">
+										<ul>
+											<li class="date"></li>
+											<li class="tags"><a href="http://maps.google.it/maps?q=the+secret+theatre&hl=it&hq=the+secret+theatre&t=h&z=15" target="_blank"></a></li>
+                                        </ul>
+								</div>
+									<p class="excerpt">
+										Face Off takes you on a "non-stop comedy thrill ride" as it takes improvisation to A Whole 'Nother Level! This rockin' comedy show features live music and poetry, physical comedy, and plenty of audience interaction! Getting three suggestions from the audience at points throughout the show, Face Off demonstrates how all things, no matter how seemingly different, are actually connected. A Whole 'Nother Level is Face Off's premiere comedy show, starring Joe Tex, Jay Painter, and Eric Robinson, and is available for booking at colleges, festivals, corporate events, and custom designed improv and theatre workshop packages are available! 
+									</p>
+<div style="width:500px ; float:left"> <a href="booking.html"><img src="images/more_button.png" width="89" height="33" alt="Read More" /></a>--> <!--<a href="http://www.secrettheatre.com/Improvius.html" target="_blank"><img src="images/buy_ticketssmall.png" width="89" height="33" alt="Buy Tickets" /></a>--><!--  </div>												
+                        </div>								</div>
+A WHOLE NOTHER LEVEL SHOW END -->
+
+<!-- GOON RIVER SHOW START -->			  
+				  <div id="post-1" class="blog-post">
+							  <div class="title">
+								<h2><a href="./article.html">Face Off Unlimited Presents Goon River</a></h2>
+								</div>
+								<a class="post-image" href="goonriver.html">
+									<img height="200" width="200" alt="Thumb1" src="./images/goonriver.jpg" />
+								</a>
+								<div class="post-detail">
+								  <div class="post-info">
+										<ul>
+											<li class="date">Next show: TBA</li>
+											<li class="tags">Location: TBA</li>
+										</ul>
+								  </div>
+									<p class="excerpt">
+								   Adapted from a classic improvisation exorcise, Face Off has created a new type of theatre experience, where audience members are literally surrounded by the story. By turning out the lights and removing the visual aspects of the experience, the story telling becomes personal to each theatre goer's imagination. With the actors seated throughout the audience, the listener is immersed into the world woven by Face Off's master improvised story tellers that is unique to each performance.  Check back here to find out when you can take a trip down to the All-American town, GOON RIVER!</p>
+									<div style="width:500px ; float:left"> <a href="goonriver.html"><img src="images/more_button.png" width="89" height="33" alt="Read More" /></a><!-- Buy Tickets link <a href="https://web.ovationtix.com/trs/pe/9756145" target="_blank"><img src="images/buy_ticketssmall.png" width="89" height="33" alt="Buy Tickets" /></a>--></div>												
+                        </div>
+								</div>
+<!-- GOON RIVER SHOW END -->                    
+                        
+<!-- Goon River
+<div id="post-4" class="blog-post">
+								<div class="title">
+									<h2><a href="#">Goon River</a></h2>
+									
+								</div>
+								<a class="post-image" href="goonriver.html">
+									<img height="200" width="200" alt="Thumb1" src="./images/goon_river.jpg" />
+								</a>
+							  <div class="post-detail">
+								  <div class="post-info">
+										<ul>
+											<li class="date">Saturday, March 2nd 8pm</li>
+											<li class="tags"><a href="http://maps.google.it/maps?q=the+secret+theatre&hl=it&hq=the+secret+theatre&t=h&z=15" target="_blank">The Secret Theatre</a></li>
+										</ul>
+								</div>
+									<p class="excerpt">
+										Discover the stories and secrets of the inhabitants of this All-American small town. The stories may be funny, but they may not have a happy ending. Completely improvised and performed in total darkness, Goon River is a unique journey into the imagination. Several improvised stories are cleverly woven together to create a tale of wonder and woe that you'll hardly believe is being made up on the spot, and all around you! 
+									</p>
+<div style="width:500px ; float:left"> <a href="goonriver.html"><img src="images/more_button.png" width="89" height="33" alt="Read More" /></a></div>												
+                        </div>								</div>
+-->
+						
+<!-- FNFO SHOW START -->  
+                                <div id="post-5" class="blog-post">
+								<div class="title">
+									<h2><a href="#">Friday Night Face Off</a></h2>
+									
+								</div>
+								<a class="post-image" href="fnfo.html">
+									<img height="200" width="200" alt="Thumb1" src="./images/shows_fnfo.png" />
+								</a>
+							  <div class="post-detail">
+								  <div class="post-info">
+										<ul>
+											<li class="date">Every Friday at 10:30 PM</li>
+											<li class="tags"><a href="http://maps.google.it/maps?q=%22Theatre+Three%22+new+york&ll=41.286062,-73.042603&spn=2.340294,5.410767&fb=1&gl=it&hq=%22Theatre+Three%22+new+york&hnear=%22Theatre+Three%22+new+york&cid=0,0,14276761080891812889&t=h&z=8&iwloc=A" title="Theatre Three" target="_blank">Theatre Three</a></li>
+										</ul>
+								</div>
+									<p class="excerpt">
+										Friday Night Face Off is the longest running professional improv comedy show in Long Island History! The New York Times calls it "A Late Night Hit!" and Newsday crowns FNFO "the Granddaddy of LI Improv!" Face Off Unlimited founders Jay Painter and Eric Robinson co-created the show a decade ago. You can see the current cast of FNFO every Friday night at Theatre Three in Port Jefferson, NY. Visit the shows website fridaynightfaceoff.com to learn more!
+									</p>
+<div style="width:500px ; float:left"> <a href="fnfo.html"><img src="images/more_button.png" width="89" height="33" alt="Read More" /></a></div>												
+                        </div>								</div>
+<!-- FNFO SHOW END -->  
+                        
+                        
+                        <p>In addition to their current productions, Face Off Unlimited is continuously developing new projects to add to the line up.</p>
+                                
+						
+							<div id="pagination">
+								
+							</div>
+                        
+                        
+                        
+                        
+                        
+					</div>
+						
+					
+					
+				</div>
+				
+                <div id="footer">
+                <a href="http://www.intheroomwithus.com" target="_blank"><img src="/images/slide6.jpg" alt="In The Room" /></a>
+                </div>
+                
+			</div>
+		</div>
+        <div id="shadow-bottom"></div>
+		<div id="copyright">
+				<p>
+Copyright &copy; Face Off Unlimited LLC - 3141 34th St. Astoria, NY 11106 - info@faceoffunlimited.com - 917.475.2785
+			</p>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12118724-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+		
+</body>
+</html>
