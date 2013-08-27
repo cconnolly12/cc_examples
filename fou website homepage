@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Face Off Unlimited</title>
+
+	<script type="text/javascript" src="./js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/fancybox/jquery.fancybox-1.2.1.pack.js"></script> 
+	<script type="text/javascript" src="./js/custom.js"></script> 
+	<script type="text/javascript" src="./js/jquery.pngfix.pack.js"></script>
+
+	<link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./dark_grunge.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" language="javascript" src="./js/text_rotate.js"></script>
+			
+    <!--SLIDER-->
+    <link rel="stylesheet" href="slider/default/sliderdefault.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="slider/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="slider/styleslider.css" type="text/css" media="screen" />
+    <style type="text/css">
+	
+a:link {
+	color: #ea2828;
+}
+a:visited {
+	color: #ea2828;
+}
+a:hover {
+	color: #CCC;
+}
+a:active {
+	color: #666;
+}
+.quotes {
+    position:absolute;
+	left:45px;
+	top:35px;
+	width:300px;
+	color:#FFF;
+	font-size:17px;
+}
+    </style>
+	
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="./iefix.css" type="text/css" media="screen" />
+	<![endif]-->
+<meta charset="UTF-8">
+
+
+		<script type="text/javascript" language="javascript" src="./js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" language="javascript" src="./js/jletter.jquery.js"></script>
+		
+		<link href="./css/jletter.css" rel="stylesheet" type="text/css"/>
+		
+		<script type="text/javascript" language="javascript">
+			$("document").ready(function(){
+				$("#demo").jLetter();
+			});
+		</script>
+		
+</head>
+
+<body>
+
+	<div id="bg-wrapper">
+		<div class="quotes">
+		
+			<div id="quotetext">
+<script type="text/javascript" >
+var myquotes = new Array(
+	'<i>"Really Funny!"</i> <br/>The New York Times',
+	'<i>"Nothing short of brilliant!"</i> <br/>Nightlife Exchange',
+	'<i>"An East Village Sensation!"</i> <br/>Asian Fusion Magazine',
+	"<i>'The raddest podcast ever!'</i> <br/>Tyler Posey, MTV's Teen Wolf",
+	"<i>'The best improv show you'll ever see!'</i> <br/>Adelphi University",
+	'<i>One of the "Best things to do in NYC"</i> <br/>CBS NY',
+	"<i>'They're not messing around'</i> <br/>The Village Voice",
+	'<i>"The Granddaddy of LI Improv!"</i> <br/>Newsday',
+	'<i>"A Late Night Hit!" <br/>The New York Times!'
+	// Leave the last quote without a comma at the end
+	);
+
+function rotatequote()
+{
+	thequote = myquotes.shift(); //Pull the top one
+	myquotes.push(thequote); //And add it back to the end
+	
+	document.getElementById('quotetext').innerHTML = thequote;
+	// This rotates the quote every 10 seconds.
+	// Replace 10000 with (the number of seconds you want) * 1000
+	t=setTimeout("rotatequote()",5000);
+}
+
+// Start the first rotation.
+rotatequote();
+</script>
+			</div>
+				
+
+		</div>
+		<div id="logo">
+        <img src="images/followus/socialhead.png" alt="social" usemap="#Map" style="float: right; vertical-align: middle; padding: 30px 30px 10px 10px;" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="1,0,48,47" href="http://www.facebook.com/faceoffimprov" target="_blank" alt="Facebook" />
+          <area shape="rect" coords="50,1,96,47" href="http://www.twitter.com/faceoffimprov" target="_blank" alt="Twitter" />
+		  <area shape="rect" coords="100,1,148,47" href="http://www.youtube.com/faceoffunlimited" target="_blank" alt="YouTube" />
+        </map>
+			<a href="./index.html">Face Off Unlimited</a>
+          
+	  </div>
+      
+    	<div id="shadow-top"></div>
+		<div id="wrapper">
+			<div id="inner">
+				<div id="header">
+					<div class="top">
+						<ul id="navigation">
+							<li class="current"><a href="./index.html">Home</a></li>
+                            <li><a href="./shows.html">Shows</a></li>
+                            <li><a href="./classes.html">Classes</a></li>
+							<li><a href="./booking.html">Bookings</a></li>
+							<li><a href="./cbooking.html">Corporate Bookings</a></li>
+                      <!--  <li><a href="./merchandise.html">Merchandise</a></li>  -->
+                            <li><a href="./contact.html">Contact</a></li>
+                            
+                            <!--
+							<li><a href="./services.html">services</a>
+								<ul>
+									<li><a href="#">great webdesign</a></li>
+									<li><a href="#">super printdesign</a></li>
+									<li><a href="#">prof. marketing</a></li>
+								</ul>
+							</li>
+							<li><a href="./blog.html">blog</a></li>
+							<li><a href="./contact.html">contact</a></li>
+						 
+                        
+                        -->
+                        </ul>
+					</div>
+                    
+					
+					<div id="slider">
+						
+						<div id="wrapperslider">
+      <div class="slider-wrapper theme-default">
+        <div id="newslider" class="nivoSlider">
+			<a href="batsu.html"><img src="images/slide1.jpg" alt=""  /></a>
+            <a href="http://www.intheroomwithus.com" target="_blank"><img src="images/slide6.jpg" alt=""  /></a>
+			<a href="classes.html"><img src="images/slide3.jpg" alt=""  /></a> 
+			<a href="maximus.html"><img src="images/slide2.jpg" alt=""  /></a>            
+			<a href="#"><img src="images/slide5.jpg" alt=""  /></a>                                                          
+			<a href="fnfo.html"><img src="images/slide4.jpg" alt=""  /></a>                                  
+          </div>
+        </div>
+   	 </div>
+						
+					</div>
+					<h1></h1>
+					
+				</div>
+				<div id="content-wrapper">
+					<div class="services-intro">
+					
+					<!-- Important message 
+					
+					<font color="red" size="+1">The Monday 11/4 performance of BATSU! will go on as scheduled! Come to East Village and laugh your Face Off!</font>
+					<br/><br/><br/>
+					-->
+					
+						<div id="service1" class="column">
+							<div class="title">
+								<img height="48" width="48" alt="Communicating" src="./images/logosmall.png" />
+								<h2>About FOU</h2>
+							</div>
+								<p>Face Off is an improv comedy production company with 3 weekly shows in 3 different cities, a premiere college tour show, the "most awesome" performance focused improv classes in NYC, and proud to present the "What's Hot" comedy podcast IN THE ROOM on iTunes.</p>
+                                <!--<a class="more button" href="shows.html">Read more</a>-->
+						</div>
+						<div id="service2" class="column">
+							<div class="title">
+								<img height="48" width="48" alt="Communicating" src="images/batsuICO.jpg" />
+								<h2>BATSU!</h2>
+							</div>
+								<p>BATSU! is America's only Japanese "batsu game" show, where comics from acclaimed comedy group Face Off Unlimited, compete in challenges, suffer hilarious and painful punishments for failure, and it all happens right in the heart of NYC's East Village!</p>
+                                <a class="more button" href="batsu.html">Read more</a>
+						</div>
+						<div id="service3" class="column last">
+							
+<script type="text/javascript" style="float:right;" src="http://www.laughstub.com/embed/promoter/js/upcomingShows/custom/index.cfm?id=175&widgetWidth=276&widgetHeight=190&widgetTitleColor=f01318&widgetBodyColor=202020&widgetTitleFontColor=000000&widgetBodyFontColor=ffffff&displayShowName=1&displayVenueName=1&displayVenueLocation=1&showMax=&widgetTitle=Tickets&groupRecurring=0"></script>
+
+								<!-- OLD TICKETS BOX								
+
+								<div class="title">
+								<img height="48" width="48" alt="Communicating" src="./images/heart.png" />
+								<h2>Tickets</h2>
+							</div>
+								<p>Tickets to all Face Off Unlimited performances are available for purchase at the venue, and for select shows you can order them in advance through our friends at LaughStub.com
+                                <br /><br /><br />
+</p>
+
+                                <a class="ticketssmall button" href="tickets.html">Read more</a> 
+								-->
+
+						</div>
+					</div>
+					
+					<div class="about-box">
+					<img style="float:left;" src="/images/logos/cartoon_man.jpg" width="150px">
+					<br/><br/><br/><div style="margin-top:-60px;">
+					<center><font style="font-size:16px;" color="red"><b><!--Japanese Game Show BATSU! Expands To Two Days A Week!-->
+					There will be no show 8/29 due to a special private event.
+					<br/><br/>
+					We return 9/2 for a special Labor Day BATSU!</b></font>
+					</center>
+					</div>
+					<br/><br/>
+					
+						<center><iframe width="450" height="275" src="//www.youtube.com/embed/Vdd5SRWkqyM?list=UU-rQF-QhPEfUZt9ANagxEZQ" frameborder="0" allowfullscreen></iframe></center>		
+						<!-- Red cross
+						<font color="red" size="+1"><a href="http://www.redcross.org/charitable-donations" target="_blank"><img src="http://www.redcross.org/images/redcross-logo.png"></a></font>
+						<br/>
+						All proceeds from this song go to the American Red Cross and the ongoing Hurricane Sandy relief effort.
+						<br/><br/>
+						Click the American Red Cross donate button above and give what you can. Thanks!
+						-->
+						
+						<!-- Featured event
+						
+						<a href="http://www.heyugly.org" target="_blank"><img alt="" src="images/heyugly/heyugly_wide.jpg" width="600px"/></a>
+						<br/><br/>
+						
+                        <div id="upcomingimg">
+                        			
+									
+									 <a href="http://www.devynrush.com/" target="_blank"><img alt="" src="images/heyugly/heyugly_tall.jpg" /></a>
+									
+									
+                                    
+                                </div>
+                                                
+                        <div id="upcomingtext">
+                        <h3>Special Event!</h3>
+					
+Face Off Unlimited and bully prevention organization Hey U.G.L.Y. are teaming up on November, 29th at 8pm in NYC! Featuring live music, Hey U.G.L.Y. spokesperson and American Idol sweetheart Devyn Rush, and the cast of BATSU! performing their outrageous and hilarious comedy!
+<br/><br/>
+BATSU! is a Japanese game show where comedians compete in improvised challenges and suffer painful and humiliating punishments for failure! 
+<br/><br/>
+More information about this special, one night only event, including all the amazing acts that will be appearing, ticket prices, and more will be updated here soon!
+<br/><br/>
+For more information on Hey U.G.L.Y. and how you can make a difference, visit them online at <a href="http://www.heyugly.org" target="_blank">www.heyugly.org</a>.
+<br/><br/>
+For more information on the amazing Devyn Rush, buy her music, or find out how you can bring her to your school to sing and talk about bullying, visit her online at <a href="http://www.devynrush.com" target="_blank">http://www.devynrush.com</a>.
+<br/><br/>
+For more information on BATSU! or Face Off Unlimited surf our website, like and follow us on <a href="http://www.facebook.com/faceoffimprov" target="_blank">Facebook</a> and <a href="http://www.twitter.com/faceoffimprov" target="_blank">Twitter</a>, or to find out how you can help with this event, email us at <a href="mailto:info@faceoffunlimited.com" target="_blank">info@faceoffunlimited.com</a>.
+<br/><br/>
+<b>VERY LIMITED NUMBER OF TICKETS WILL BE SOLD, DON'T MISS OUT! STAY TUNES FOR DETAILS TO COME!</b>
+
+-->
+
+  <!--READ MORE BUTTON  <div style="width:500px ; float:left"> <img src="images/more_button.png" width="89" height="33" alt="Read More" /></div>    -->
+                        </div>
+                        
+                       
+                        
+								</div>
+					
+				
+					
+					<div class="recent-post" style="float:right;margin-top:-500px;margin-right:50px;">
+					
+					
+						<h2>Face Off Twitter Feed</h2>
+						<!--TWITTER-->
+<a class="twitter-timeline" href="https://twitter.com/FaceOffImprov" data-widget-id="355205417581834240">Tweets by @FaceOffImprov</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!--/TWITTER-->
+                        
+					</div>
+				</div>
+				
+                <div id="footer">
+                <a href="http://www.intheroomwithus.com" target="_blank"><img src="images/logo_intheroom_wide.jpg" width="960" height="193" alt="In The ROOM" /></a>
+                </div>
+                
+                
+		  </div>
+		</div>
+        <div id="shadow-bottom"></div>
+		<div id="copyright">
+			<p>
+		Copyright &copy; Face Off Unlimited LLC - 3141 34th St. Astoria, NY 11106 - info@faceoffunlimited.com - 917.475.2785
+			</p>
+		</div>
+	</div>
+    
+    
+    <!--SLIDER SCRIPT-->
+    <script type="text/javascript" src="slider/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="slider/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#newslider').nivoSlider();
+    });
+    </script>
+    
+    
+    
+    <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=7959491; 
+var sc_invisible=1; 
+var sc_security="8098b421"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+<noscript><div class="statcounter"><a title="tumblr stats"
+href="http://statcounter.com/tumblr/"
+class="statcounter"><img class="statcounter"
+src="http://c.statcounter.com/7959491/0/8098b421/1/"
+alt="tumblr stats" /></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12118724-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+    
+</body>
+</html>
