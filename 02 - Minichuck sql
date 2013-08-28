@@ -66,10 +66,11 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+
 -- =============================================
--- Author:		Anne-Marie Messineo
--- Create date: July 10, 2013
--- Description:	Mini Chuck
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
 -- =============================================
 CREATE PROCEDURE [dbo].[mc_Users_ByName]
 	-- Add the parameters for the stored procedure here
