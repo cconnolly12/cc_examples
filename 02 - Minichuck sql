@@ -1,0 +1,103 @@
+/****** Object:  StoredProcedure [dbo].[mc_Users_Insert]    Script Date: 07/11/2013 17:03:46 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[mc_Users_Insert]
+	-- Add the parameters for the stored procedure here
+	@username	varchar(50),
+	@password	varchar(50),
+	@salt		varchar(50),
+	@companyID	int,
+	@userid		int output
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert the user information
+Insert into mc_users
+(username, uPassword, companyID)
+Values
+(@username, @password, @companyID)
+
+-- Get the User ID
+SET @userid = SELECT Userid FROM mc_users WHERE username=@username
+
+-- Insert the sale value into the table
+Insert into mc_usersSalt (userID, salt) Values (@userid, @salt)
+
+END
+GO
+
+-- =============================================-- =============================================-- =============================================-- =============================================
+
+DELIMITER //
+
+CREATE PROCEDURE mc_Users_Insert()
+BEGIN
+
+INSERT INTO mc_users(username, uPassword, companyID)
+
+VALUES(@username, @password, @companyID)
+
+
+SET @userid = (SELECT userid FROM mc_users WHERE username=@username)
+
+
+INSERT INTO mc_usersSalt (userID, salt) Values (@userid, @salt)
+
+END //
+
+DELIMITER ;
+
+
+
+-- =============================================-- =============================================-- =============================================-- =============================================
+
+/****** Object:  StoredProcedure [dbo].[mc_Users_ByName]    Script Date: 07/11/2013 17:03:46 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		Anne-Marie Messineo
+-- Create date: July 10, 2013
+-- Description:	Mini Chuck
+-- =============================================
+CREATE PROCEDURE [dbo].[mc_Users_ByName]
+	-- Add the parameters for the stored procedure here
+	@username varchar(50)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	SELECT     u.userid, u.username, u.uPassword, u.companyID, us.salt
+FROM         mc_users AS u INNER JOIN
+                      mc_usersSalt AS us ON u.userid = us.userID where u.username = @username
+END
+GO
+
+-- =============================================-- =============================================-- =============================================-- =============================================
+
+DELIMITER //
+
+CREATE PROCEDURE mc_Users_ByName()
+BEGIN
+
+SELECT     u.userid, u.username, u.uPassword, u.companyID, us.salt
+FROM       mc_users AS u INNER JOIN
+                      mc_usersSalt AS us ON u.userid = us.userID
+                      where u.username = @username
+END //
+
+DELIMITER ;
