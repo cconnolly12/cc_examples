@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Crossroads StrongBox Mini Chuck</title>
+
+<link href="css/forms.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+
+<script type="text/javascript">
+function validateForm()
+{
+var x=document.forms["userlogin"]["username"].value;
+if (x==null || x=="")
+  {
+  alert("Username must be filled out");
+  return false;
+  }
+var x=document.forms["userlogin"]["password"].value;
+if (x==null || x=="")
+  {
+  alert("password must be filled out");
+  return false;
+  }
+}
+</script>
+
+<script type="text/javascript" src="js/generic.js" ></script>
+<script type="text/javascript" src="js/jquery-1.2.6.js" ></script>
+
+</head>
+
+<body style="overflow-x: hidden;">
+
+<!-- Start Header --> 
+ <div id="wrapper">
+	<div style="height:436px; background: url(images/header_bg2.jpg) repeat;">
+    	  <div id="text_wrapper"><img src="images/header2.jpg" width="823" height="436" border="0"></div>
+    </div>
+ </div>
+<!-- End Header --> 
+
+
+<div id="wrapper">
+<div id="text_wrapper">
+
+<?php
+	if(!isset($_POST['submit']))
+		{ 
+?>
+
+<table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+    <tr>
+    <form action="" method="post" id="userlogin" class="" name="userlogin" onsubmit="return validateForm()" >
+        <td>
+            <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+                <tr>
+                	<td colspan="3"><strong>Member Login </strong></td>
+                </tr>
+                <tr>
+                	<td width="294" colspan="3" class="message"><input name="userid" type="text" id="userid" value="<?php echo $userid ?>"></td>
+                </tr>
+                <tr>
+                    <td width="78">Username</td>
+                    <td width="6">:</td>
+                    <td width="294"><input name="username" type="text" id="username" value="<?php echo $username ?>"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input name="password" type="text" id="password" value="<?php echo $password ?>"></td>
+                </tr>
+                <tr>
+                	<td width="294" colspan="3" class="message"><input name="companyID" type="text" id="companyID" value="<?php echo $companyID ?>"></td>
+                </tr>
+               <tr><td colspan="3" id="first_name_msg" class="msg_div"><div style="font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div></td>
+               </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><button name="submit" type="submit" class="" onclick="hideit()" id="">Login</button></td>
+                </tr>
+            </table>
+        </td>
+    </form>
+    </tr>
+</table>
+
+
+<?php
+  
+       }else{
+
+  // MYSQLI
+        $mysqli = new mysqli('localhost', 'cconnolly', 'crossroadsdev4321!', 'dev');
+		
+		
+/***************************************************************************************************											
+****************************** FIRST QUERY *********************************************************							
+***************************************************************************************************/
+     
+     $login =$mysqli->query("CALL mc_Users_ByName('{$_POST['username']}', '{$_POST['password']}', '{$_POST['userid']}', '{$_POST['companyID']}')");
+     
+     // display records if there are records to display
+         if ($login->num_rows > 0) {
+			 
+ 
+     session_start();     
+     $_SESSION['username'] = $user_name;
+	 
+	 	
+	echo '<div style="float:left"><h3>Welcome ' . $_POST['username'] .'</h3><p><a href="logout.php" style="font-size:12;">Log Out</a></p></div>'; //= $_POST['username']									
+
+	
+
+	// close database connection
+    //$mysqli->close();
+	
+/***************************************************************************************************											
+****************************** SECOND QUERY  *******************************************************								
+***************************************************************************************************/
+
+$mysqli = new mysqli('localhost', 'cconnolly', 'crossroadsdev4321!', 'dev'); 
+
+ // Calling Procedure Records        
+         $result = $mysqli->query("CALL mc_Products_SelectByUserID('{$_POST['username']}')") or die("procedure failed");
+     
+     // display records if there are records to display
+         if ($result->num_rows > 0)
+                                    {
+											
+                                            echo "<table width='300' border='0' align='center' cellpadding='0' cellspacing='1' bgcolor='#CCCCCC'>";
+											echo "<tr>";
+											echo "<form action='confirm.php' method='post'>";
+											
+											echo "<td>";
+											echo "<table width='100%' border='0' cellpadding='3' cellspacing='1' bgcolor='#FFFFFF'>";
+											echo "<tr>";
+											echo "<td align='center'>";
+											
+											echo "<b>Please choose from list of available products below</b>";
+                                            
+                                            
+                                            // Select for form
+                                            echo "<br/><br/><select name='productCode'>";
+                                            
+                                            while ($row = $result->fetch_object())
+                                            {
+                                                    // set up a row for each record
+                                                    echo "<option value='{$row->productCode} | {$row->productDesc}'>{$row->productCode} | {$row->productDesc}</option>\n";
+                                                    echo "<br/><br/>";
+                                                    
+                                            }
+                                            
+                                           // submit for form
+										   echo "</td>";
+										   echo "</tr>";
+										   echo "<tr>";
+										   echo "<td align='center'>";
+                                           echo "<br/><input type='submit' value='Submit' id=''/>";
+                                           echo "</select> <br/><br/>";
+										   
+										   echo "</td>";
+										   echo "</tr>";
+										   echo "</table>";
+										   echo "</td>";
+										   
+                                           echo "</form>";
+										   echo "</td>";
+										   echo "</tr>";
+										   echo "</table>";
+							}
+	
+
+            }
+			
+/***************************************************************************************************											
+****************************** INVALID USERNAME AND PASSWORD ***************************************								
+***************************************************************************************************/
+									else
+									{
+											echo "<center>";
+                                            print $error="Your Login Name or Password is invalid";
+											echo "<br/> <br/> <a href='index.php'>Return to Login</a>";
+											echo "</center>";
+									}
+	}
+	// close database connection
+	//$mysqli->close();
+?>   
+
+
+</div>
+</div>
+
+
+</body>
+</html>
